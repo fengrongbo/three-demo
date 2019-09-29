@@ -119,6 +119,12 @@
 
             player.anims.play('right', true);
         }
+        else if (cursors.turn.isDown)
+        {
+            player.setVelocity7(100);
+
+            player.anims.play('turn', true);
+        }
         else
         {
             player.setVelocityX(0);
